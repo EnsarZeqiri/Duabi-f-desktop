@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.left-continer{
+    display: flex;
+    width: 100%;
+    background-color: aquamarine;
+    height: 10%;
+}
+.Profil{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5%;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+/* @media(max-width:400px ){
+    h1{
+        font-size: 1.2em;
+    }
+} */
+.left-continer-opsionet{
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+}
+.left-continer-opsionet ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    .left-continer-opsionet ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        border: none;
+        width: 20%;
+        cursor: pointer;
+    }
+    .select-option{
+        display: none;
+    }
+    
+    @media(max-width:510px ){
+        .left-continer-opsionet ul{
+            display: none;
+        } 
+        .select-option{
+            display: block;
+            text-align: center;
+            padding: 0;
+            appearance: none;
+            background: url('shigjeta.png') no-repeat right;
+            cursor: pointer;
+            width: 80px;
+            
+        }
+        .select-option option {
+            cursor: pointer;
+            
+          }
+    }
+.right-continer{
+    display: flex;
+    flex-grow: 1;
+}
+.content-continer{
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    justify-content: center;
+}
+form{
+    width: 100%;
+}
+
+.form-coniner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.form-coniner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.5%;
+}
+.Form-input{
+    width: 80%;
+    font-size: 1.7em;
+    text-align: center;
+    outline: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 10px
+}
+.butoni-{
+    width: 100px;
+    margin-top: 0.5%;
+}
+.Produkete-Shtuara{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+.product-table{
+    width: 100%;
+    text-align: center;
+}
+

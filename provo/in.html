@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="str.css">
+</head>
+<body>
+    <div class="left-continer">
+        <div class="Profil" >
+            <h1>DUBAI-F</h1>
+        </div>
+        <div class="left-continer-opsionet">
+            <ul class="lisat">
+                <li>Shitjet</li>
+                <li>produktet</li>
+                <li>porosit</li>
+                <li>raporti </li>
+            </ul>
+            <select class="select-option" name="" id="select-option">
+                <option disabled selected >Zgjedhjet</option>
+                <option value="Shitjet.html" onclick="">Shitjet</option>
+                <option value="produktet.html">Produktet</option> 
+                <option value="Porosit.html">Porosit</option>
+                <option value="Raporti.html">Raporti</option>
+            </select>
+        </div>
+    </div>
+    <div class="right-continer">
+        <div class="content-continer">
+           
+                <form action="" id="product-form">
+                    <div class="form-coniner"> 
+                        <div>
+                            <label for="Numri-Serik">Numri Serik</label>
+                            <input class="Form-input"  name="Numri-Serik" type="text" id="numri-serik" placeholder="Vendos Numrin Serik:">
+                        </div>
+                        <div>
+                            <label for="emri">Emri:</label>
+                            <input class="Form-input"  name="emri"type="text" placeholder="Vendos Emrin" id="Emri"required>
+                        </div>
+                        <div>
+                            <label for="Sasia">Sasia</label>
+                            <input class="Form-input"  name="Sasia" type="text" id="sasia">
+                        </div>
+                        <div>
+                            <button class="butoni-" type="submit">Shto Produktin</button>
+                        </div>
+                        
+                    <div>
+                </form>
+                <div class="Produkete-Shtuara">    
+                    <h2>Lista e Produkteve</h2>
+                    <table id="product-table" class="product-table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Numri Serik</th>
+                                <th>Emri</th>
+                                <th>Sasia</th>
+                            </tr>
+                        </thead>
+                            <tbody></tbody>
+                        </table> 
+                </div>            
+        </div>
+    </div>
+    <script src="funksionet.js">
+    </script>
+</body>
+</html>

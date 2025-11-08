@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista me Ikona</title>
+    <style>
+        /* Stili për listën e produkteve */
+        .product-list {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-list li {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        /* Stilet për ekrane të vegjël (më të vogla se 600px) */
+        @media (max-width: 600px) {
+            .product-list li {
+                font-size: 0; /* Fsheh tekstin */
+                position: relative;
+            }
+            .product-list li::before {
+                content: ""; /* Këtu vendos ikonën si background */
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .product-list li:nth-child(1)::before {
+                background-image: url('ikon1.png'); /* Ikona për Produktin 1 */
+            }
+            .product-list li:nth-child(2)::before {
+                background-image: url('ikon2.png'); /* Ikona për Produktin 2 */
+            }
+            .product-list li:nth-child(3)::before {
+                background-image: url('ikon3.png'); /* Ikona për Produktin 3 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="product-list">
+        <li>Produkti 1</li>
+        <li>Produkti 2</li>
+        <li>Produkti 3</li>
+    </ul>
+    
+</body>
+</html>
